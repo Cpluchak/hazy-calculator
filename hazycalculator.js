@@ -1,21 +1,23 @@
-const operators = ['+', '-', '*', '/']
-
-function calculate(Inputs) {
-    for (let i = 0; i < Inputs.length; i++)
-         
-   Inputs = Inputs.map(Inputs => {
-    if (Inputs === null) {
-      return 0
+function calculate(inputs) {
+    const operators = ['+', '-', '*', '/']
+    let nums = []
+    let operator = ''
+    
+    for (let i = 0; i < inputs.length; i++){
+    if (inputs[i] === null) {
+      nums.push (0)
     }
-    else {
-      return Inputs
+    else if(operators.includes(inputs[i])){
+        operator = inputs[i]
     }
+    else if(inputs[i] !== '' && inputs[i] !== undefined && inputs[i] === !isNaN(inputs[i])); {
 
-})
-
+    }
+      
 }
 
-switch () {
+
+switch (any) {
     case 'add':
         value = num1 + num2
         break
@@ -30,8 +32,6 @@ switch () {
 
 
 
+    }
 }
-
-
-
 module.exports = calculate

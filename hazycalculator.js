@@ -1,17 +1,37 @@
 const operators = ['+', '-', '*', '/']
 
-function calculate(calculationSteps) {
+function calculate(Inputs) {
+    for (let i = 0; i < Inputs.length; i++)
          
-   calculationSteps = calculationSteps.map(calculationStep => {
-    if (calculationStep === null) {
+   Inputs = Inputs.map(Inputs => {
+    if (Inputs === null) {
       return 0
     }
     else {
-      return calculationStep
+      return Inputs
     }
 
 })
 
 }
+
+switch () {
+    case 'add':
+        value = num1 + num2
+        break
+    case 'subtract':
+        value = num1 - num2
+        break
+    case 'multiply':
+        value = num1 * num2
+        break
+    case 'divide':
+        value = num1 / num2
+
+
+
+}
+
+
 
 module.exports = calculate

@@ -5,16 +5,17 @@ function calculate(inputs) {
     
     for (let i = 0; i < inputs.length; i++){
     if (inputs[i] === null) {
-      nums.push (0)
-      console.log(i)
+        nums.push(0) 
+        
     }else if(operators.includes(inputs[i])){
-        operator = inputs[i]
-    }else if(inputs[i] !== '' && inputs[i] !== undefined && !isNaN(inputs[i])); {
+        operator = inputs[i] 
+        
+    }else if(inputs[i] !== '' && inputs[i] !== undefined && !isNaN(inputs[i])) {
         nums.push(inputs[i])
+        
     }
       
 }
-console.log(nums)
     if (operator.length !== 1 || nums.length !== 2) return NaN
 
 
